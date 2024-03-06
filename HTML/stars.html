@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallary-Stars</title>
+  <script src="../JAVA SCRIPT/stars.js" defer></script>
+  <link rel="stylesheet" href="../CSS/stars.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of stars</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="./blog1.html"><li class="mli">Home</li></a>
+            <a href="./info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <a href="./planets.html"><li class="sli">Planets</li></a>
+                    <a href="./stars.html"><li class="sli">Stars</li></a>
+                    <a href="./blackhole.html"><li class="sli">Blackhole</li></a>
+                    <a href="./asteroids.html"><li class="sli">Astroids</li></a>
+                    <a href="./satellite.html"><li class="sli">Satellite</li></a>
+                </ul>
+            </li>
+            <a href="../index.html"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openImg(1 ,'Yellow Dwraf','A G-type main-sequence star (spectral type: G-V), also often, and imprecisely called a yellow dwarf, or G star, is a main-sequence star (luminosity class V) of spectral type G. Such a star has about 0.9 to 1.1 solar masses and an effective temperature between about 5,300 and 6,000 K. Like other main-sequence stars, a G-type main-sequence star converts the element hydrogen to helium in its core by means of nuclear fusion, but can also fuse helium when hydrogen runs out.')">
+        <img class="a" onclick="openImg(2,'Red Dwarf','A red dwarf is the smallest and coolest kind of star on the main sequence. Red dwarfs are by far the most common type of star in the Milky Way, at least in the neighborhood of the Sun, but because of their low luminosity, individual red dwarfs cannot be easily observed. From Earth, not one star that fits the stricter definitions of a red dwarf is visible to the naked eye.[1] Proxima Centauri, the nearest star to the Sun, is a red dwarf, as are fifty of the sixty nearest stars. According to some estimates, red dwarfs make up three-quarters of the stars in the Milky Way.')">
+        <img class="a" onclick="openImg(3,'Red Gaint','A red giant is a luminous giant star of low or intermediate mass (roughly 0.3–8 solar masses (M☉)) in a late phase of stellar evolution. The outer atmosphere is inflated and tenuous, making the radius large and the surface temperature around 5,000 K (4,700 °C; 8,500 °F) or lower. The appearance of the red giant is from yellow-white to reddish-orange, including the spectral types K and M, sometimes G, but also class S stars and most carbon stars.')">
+        <img class="a" onclick="openImg(4,'Blue Gaint','In astronomy, a blue giant is a hot star with a luminosity class of III (giant) or II (bright giant). In the standard Hertzsprung–Russell diagram, these stars lie above and to the right of the main sequence.The term applies to a variety of stars in different phases of development, all evolved stars that have moved from the main sequence but have little else in common, so blue giant simply refers to stars in a particular region of the HR diagram rather than a specific type of star.')">
+        <img class="a" onclick="openImg(5,'Whita Dwarf','A white dwarf is a stellar core remnant composed mostly of electron-degenerate matter. A white dwarf is very dense: its mass is comparable to the Suns, while its volume is comparable to the Earths. A white dwarfs faint luminosity comes from the emission of residual thermal energy; no fusion takes place in a white dwarf.[1] The nearest known white dwarf is Sirius B, at 8.6 light years, the smaller component of the Sirius binary star. There are currently thought to be eight white dwarfs among the hundred star systems nearest the Sun.[2] The unusual faintness of white dwarfs was first recognized in 1910.[3]: 1  The name white dwarf was coined by Willem Luyten in 1922.')">
+        <img class="a" onclick="openImg(6,'Brown Dwarf','Brown dwarfs (also called failed stars) are substellar objects that are not massive enough to sustain nuclear fusion of ordinary hydrogen (1H) into helium in their cores, unlike a main-sequence star. Instead, they have a mass between the most massive gas giant planets and the least massive stars, approximately 13 to 80 times that of Jupiter (MJ).[2][3] However, they can fuse deuterium (2H) and the most massive ones (> 65 MJ) can fuse lithium (7Li).')">
+        </div>
+    <div id="subWindow" >
+        <h1 id="close" onclick="closeImg()">X</h1>
+        <img id="subWindowImg" src="../ASSET/IMAGE/stars/1.jpg">
+        <h1 id="imageHeading">Heading</h1>
+        <p id="imgpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, eum?</p>
+    </div>
+</body>
+</html>
